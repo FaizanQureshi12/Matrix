@@ -1,0 +1,30 @@
+.lp{display: inline;}
+.jnm{margin-left:20px;
+display: inline; }
+b#nkm{margin-left:280px ;}
+b#hjk{margin-left:500px ;}
+td:hover{background-color: aquamarine;}
+.rg:focus{background-color: red;}
+#huo{display: inline;}
+#joo{display: inline;}
+#uio{display: inline;}
+#total{display: inline;}
+
+div#result{width: 100px;
+background-color: goldenrod;
+ box-shadow: 6px 4px 3px; border-radius:12px ;
+border: 7px solid violet;}
+body#rty{background-color: antiquewhite;}
+button#fk{background-color:aqua; box-shadow: 7px 3px 4px;
+border-radius: 10px; width:60px ;height: 30px;
+border: 1px solid black;}
+
+body#up{background-image: url('https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1294521676');
+background-size:100% ;  }
+button#btn{background-color: black; border-radius: 20px;border: 4px dotted burlywood; }
+div#hkj{background-color: cornflowerblue; width: 180px;
+border: 2px solid black; position: absolute;left:100px ;top:180px ;}
+div#bhj{background-color: azure;width: 180px;
+position: absolute ;left: 410px; top: 180px; border: 2px solid black;}
+div#yio{background-color: antiquewhite;width: 180px;
+position: absolute;left:700px ;top:180px ;border: 2px solid black;}
