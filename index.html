@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="up">
+   <center><h1 style="color: cornsilk;">
+       If You want 3x3 Matrix Plz Enter Values
+   </h1> <button style="color: white;" id="btn" onclick="start()">
+        <h1>Start</h1>
+    </button> </center>
+    <div id="hkj">
+        <center><h1 id="arr1">1st Matrix</h1>
+        <h3 id="rarr1"></h3></center> </div>
+        <div id="bhj"><center> <h1 id="arr2">2nd Matrix</h1>
+        <h3 id="rarr2"></h3> </center>  </div>
+        <div id="yio"> <center><h1 id="arr3">3rd Matrix</h1>
+        <h3 id="rarr3"></h3> </center> </div>
+    
+    <script>
+      
+        function start() {
+        
+            let rarr1 = document.getElementById('rarr1');
+            let rarr2 = document.getElementById('rarr2');
+            let rarr3 = document.getElementById('rarr3');
+
+            let m1 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+            let m3 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    m1[i][j] = Number(prompt(`Number of row ${i + 1} and Column ${j + 1} for arr1`));
+                    rarr1.innerHTML = m1[0][0] + '  ' + m1[0][1] + '  ' + m1[0][2] + '<br>' + m1[1][0] + '  ' + m1[1][1] + '  ' + m1[1][2] + '<br>' + m1[2][0] + '  ' + m1[2][1] + '  ' + m1[2][2];
+                }
+            }
+            let m2 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    m2[i][j] = Number(prompt(`Number of row ${i + 1} and Column ${j + 1} for arr2`));
+                    rarr2.innerHTML = m2[0][0] + ' ' + m2[0][1] + ' ' + m2[0][2] + '<br>' + m2[1][0] + ' ' + m2[1][1] + ' ' + m2[1][2] + '<br>' + m2[2][0] + ' ' + m2[2][1] + ' ' + m2[2][2];
+                    m3[i][j] = m1[i][j] + m2[i][j];
+                    rarr3.innerHTML = m3[0][0] + ' ' + m3[0][1] + ' ' + m3[0][2] + '<br>' + m3[1][0] + ' ' + m3[1][1] + ' ' + m3[1][2] + '<br>' + m3[2][0] + ' ' + m3[2][1] + ' ' + m3[2][2];
+                }          
+            }
+              document.getElementById('btn').style.display = 'display';
+        }
+    </script>
+
+</body>
+
+</html>
